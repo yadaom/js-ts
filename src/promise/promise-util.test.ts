@@ -41,15 +41,6 @@ function promisifyTest() {
   })
 }
 
-
-function delayTest() {
-  promiseUtil
-  .delay("World!", 1000)
-  .then((data: string) => {
-    console.log(new Date(), "Resolved after sometime", "Hello", data);
-  });
-}
-
 function main() {
   console.log(new Date(), "Adding one second delay.");
   delayTest();
